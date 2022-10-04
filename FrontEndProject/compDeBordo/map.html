@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="description" content="Radio do computador de bordo">
+ <meta name="author" content="Pedro Targa">
+ <title>Radio</title>
+ <link href="../styles/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="../styles/bootstrap.min.css">
+ <link rel="stylesheet" href="../styles/modal.css">
+ <script src="../script/script.js"></script>
+ <script src="../script/jquery.min.js"></script>
+ <script src="../script/bootstrap.min.js"></script>
+ <script src="https://use.fontawesome.com/21f4257b85.js"></script>
+ <script>
+  $(document).ready(function () {
+   $("#myModal").modal('show');
+  });
+ </script>
+</head>
+
+<body class="grid-container">
+
+ <header class="item1">
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-end">
+   <a class="navbar-brand w-75 text-end" href="#">Computador de bordo - Mapa</a>
+  </nav>
+ </header>
+ <aside class="item2 d-flex align-items-center justify-content-between flex-column">
+  <a class="text-decoration-none text-dark mt-4" href="./index.html">
+   <i class="fa fa-arrow-circle-left fa-3x text-center " aria-hidden="true"></i>
+  </a>
+ </aside>
+ <main class="item3 d-flex align-items-center justify-content-center">
+  <img src="../images/maps.png" alt="Google Maps Mock Image">
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+     <div class="modal-header">
+      <h2 class="modal-title">Sugestão: Mudança de destino</h2>
+     </div>
+     <div class="modal-body">
+      <p>Normalmente você vai ao supermercado nesse horário/dia. <br> Gostaria de trocar de destino?</p>
+     </div>
+     <div class="modal-footer">
+      <a type="button" class="btn btn-default btn-lg" href="./index.html">Não, continuar o mesmo
+       trajeto</a>
+      <a type="button" class="btn btn-default btn-lg" href="./index.html">Sim, atualizar o trajeto</a>
+     </div>
+    </div>
+
+   </div>
+  </div>
+ </main>
+ <footer class="item5">
+
+ </footer>
+</body>
+
+</html>

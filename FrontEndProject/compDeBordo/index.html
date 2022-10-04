@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="description" content="Tela principal do computador de bordo">
+ <meta name="author" content="Pedro Targa">
+ <title>Computador de Bordo</title>
+ <link href="../styles/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="../styles/bootstrap.min.css">
+ <link rel="stylesheet" href="../styles/modal.css">
+ <script src="../script/script.js"></script>
+ <script src="../script/jquery.min.js"></script>
+ <script src="../script/bootstrap.min.js"></script>
+ <script src="https://use.fontawesome.com/21f4257b85.js"></script>
+</head>
+
+<body class="grid-container">
+ <header class="item1">
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-end mr-1">
+   <a class="navbar-brand" href="#">Computador de bordo</a>
+  </nav>
+
+ </header>
+ <aside class="item2 d-flex align-content-center justify-content-between flex-column">
+  <i class="fa fa-car fa-3x text-center mt-4" aria-hidden="true"></i>
+  <!-- Trigger the modal with a button -->
+  <a class="mb-5 ml-1 mr-1 text-center mt-4 text-decoration-none text-dark" onclick="configModal()"
+   data-target="#myModal" href="#" aria-label="Settings">
+   <i class="fa fa-cog fa-3x" aria-hidden="true"></i>
+  </a>
+
+  </a>
+ </aside>
+ <main class="item3 d-flex align-items-center justify-content-center flex-wrap">
+  <a id="lamp" class="btn btn-link p-3" onclick="turnOnLamp()" aria-label="Lamp">
+   <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
+  </a>
+  <a class="btn btn-link p-3" onclick="houseModal()" aria-label="Home">
+   <i class="fa fa-home fa-5x" aria-hidden="true"></i>
+  </a>
+  <a class="btn btn-link p-3" href="./radio.html" aria-label="Music">
+   <i class="fa fa-music fa-5x" aria-hidden="true"></i>
+  </a>
+  <a class="btn btn-link p-3" href="./map.html" aria-label="Map">
+   <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+  </a>
+
+  <!-- Modal -->
+  <div id="configModal" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+     <div class="modal-header">
+      <h2 class="modal-title">Não olhe para a tela enquanto dirige!</h2>
+     </div>
+     <div class="modal-body">
+      <p>Para a sua segurança, não configure o seu computador de bordo enquanto dirige.</p>
+     </div>
+     <div class="modal-footer">
+      <input disabled="true" id="estouDirigindo" value="" type="button" class="btn btn-default btn-lg"
+       data-dismiss="modal" />
+      <a type="button" class="btn btn-default btn-lg" href="./config.html">Sou Passageiro</a>
+     </div>
+    </div>
+
+   </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="houseModal" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+     <div class="modal-header">
+      <h2 class="modal-title">Casa inteligente</h2>
+     </div>
+     <div class="modal-body d-flex align-items-center justify-content-center">
+      <button class="btn btn-lg m-2">
+       <h2>Abrir portão</h2>
+       <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-lg m-2">
+       <h2>Preparar café</h2>
+       <i class="fa fa-coffee fa-3x" aria-hidden="true"></i>
+      </button>
+     </div>
+     <div class="modal-footer">
+      <a type="button" class="btn btn-default btn-lg" data-dismiss="modal" href="#">Fechar</a>
+     </div>
+    </div>
+
+   </div>
+  </div>
+ </main>
+ <footer class="item5 text-center p-4 d-flex align-content-center justify-content-end">
+  <p class="text-reset fw-bold"> &copy 2022 Copyright: <a href="#">BRQFIAPCars.com</a> </p>
+ </footer>
+</body>
+
+
+</html>
